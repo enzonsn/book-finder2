@@ -1,0 +1,30 @@
+{
+  "name": "book-finder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:prod": "cd server && npm start",
+    "start:dev": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
+    "install": "cd server && npm i && cd ../client && npm i"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enzonsn/book-finder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/enzonsn/book-finder/issues"
+  },
+  "homepage": "https://github.com/enzonsn/book-finder#readme",
+  "devDependencies": {
+    "concurrently": "^6.2.0"
+  },
+  "dependencies": {
+    "graphql": "^15.5.1",
+    "if-env": "^1.0.4"
+  }
+}
