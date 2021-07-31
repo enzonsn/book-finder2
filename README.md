@@ -33,7 +33,7 @@ Run 'npm start' in the terminal to start the Social API. It will run on `localho
 
 https://morning-escarpment-78076.herokuapp.com/
 
-![DEMO IMAGE]()
+<img src="https://raw.githubusercontent.com/enzonsn/book-finder2/main/client/public/img.PNG" width="auto" height="200">
 
 ## Contributing
 
